@@ -1,16 +1,24 @@
-# flutter_dev_lab
+# flutter_dev_lab 🛠️ 
 
-A new Flutter project.
+Flutter 위젯, 레이아웃, 애니메이션 등 다양한 기능을 실험하고 연습하기 위한 개인용 프로젝트입니다.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 목적
 
-A few resources to get you started if this is your first Flutter project:
+이 프로젝트는 다음과 같은 Flutter 관련 실습을 위해 만들어졌습니다:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 다양한 위젯을 테스트하고 조합해보기
+- 애니메이션, 전환 효과 실험
+- 상태 관리 기법 연습 (`provider`, `setState`, `Riverpod` 등)
+- 외부 패키지 및 API 연동 테스트
+- UI/UX 실험
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🧪 최근 실험 목록
+
+- ✅ Hero
+
+
+---
