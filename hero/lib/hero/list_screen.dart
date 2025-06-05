@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dev_lab/hero/detail_screen.dart';
-
+import 'package:hero/hero/detail_screen.dart';
 
 class ListScreen extends StatelessWidget {
   const ListScreen({super.key});
@@ -8,6 +7,12 @@ class ListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () => Navigator.pop(context),
+          icon: Icon(Icons.arrow_back_ios),
+        ),
+      ),
       body: GridView.builder(
         itemCount: 190,
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
@@ -21,11 +26,8 @@ class ListScreen extends StatelessWidget {
                 PageRouteBuilder(
                   transitionDuration: Duration(milliseconds: 500),
                   pageBuilder:
-                      (_, __, ___) =>
-                      DetailScreen(
-                        callback: () {
-
-                        },
+                      (_, __, ___) => DetailScreen(
+                        callback: () {},
                         index: index,
                         child: Container(color: getColorByIndex(index)),
                       ),
@@ -35,9 +37,6 @@ class ListScreen extends StatelessWidget {
             child: Hero(
               tag: "Hero$index",
               child: Container(color: getColorByIndex(index)),
-
-              //Colors.purple[100 * (index)]
-
             ),
           );
         },
@@ -65,10 +64,17 @@ class ListScreen extends StatelessWidget {
   }
 
   static const List<int> primaryShades = [
-    50, 100, 200, 300, 400, 500, 600, 700, 800, 900
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
   ];
 
-  static const List<int> accentShades = [
-    100, 200, 400, 700
-  ];
+  static const List<int> accentShades = [100, 200, 400, 700];
 }
