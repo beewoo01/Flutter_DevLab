@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:carousel_view/carousel_view.dart';
 import 'package:flutter/material.dart';
 import 'package:hero/hero.dart';
 
@@ -44,6 +45,16 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: Text("HERO"),
+            ),
+
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CarouselExampleApp()),
+                );
+              },
+              child: Text("CarouselExampleApp"),
             ),
           ],
         ),

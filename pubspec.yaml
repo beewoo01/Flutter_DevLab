@@ -16,6 +16,9 @@ dependencies:
   hero:
     path: hero
 
+  carousel_view:
+    path: carousel_view
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

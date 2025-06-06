@@ -1,0 +1,1 @@
+export 'package:carousel_view/view/carousel_view.dart';
